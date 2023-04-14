@@ -19,7 +19,16 @@ namespace HandyPH
 
         private void userhome_handymanbutton_Click(object sender, EventArgs e)
         {
+            handyman_HomeForm handyman = new handyman_HomeForm();
+            handyman.Show();
+            this.Hide();
+        }
 
+        private void userhome_homeownerbutton_Click(object sender, EventArgs e)
+        {
+            homeowner_HomeForm homeowner = new homeowner_HomeForm();
+            homeowner.Show();
+            this.Hide();
         }
     }
 }

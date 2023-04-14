@@ -50,6 +50,7 @@
             this.userhome_homeownerbutton.TabIndex = 1;
             this.userhome_homeownerbutton.Text = "Homeowner";
             this.userhome_homeownerbutton.UseVisualStyleBackColor = true;
+            this.userhome_homeownerbutton.Click += new System.EventHandler(this.userhome_homeownerbutton_Click);
             // 
             // userHome
             // 
