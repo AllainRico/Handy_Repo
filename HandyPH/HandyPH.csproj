@@ -66,6 +66,9 @@
     <Compile Include="userHome.Designer.cs">
       <DependentUpon>userHome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adminHome.resx">
+      <DependentUpon>adminHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="userHome.resx">
+      <DependentUpon>userHome.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
