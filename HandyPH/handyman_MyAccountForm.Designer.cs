@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_streetTextBox = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_barangayTextBox = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_cityTextBox = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_municipalityTextBox = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_contactnumberTextBox = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_lastnameTextBox = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_firstnameTextBox = new System.Windows.Forms.TextBox();
             this.handymanmyaccountform_usernameTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,8 +47,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.myaccountform_editmyaccountButton = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.handymanmyaccountform_aboutTextBox = new System.Windows.Forms.TextBox();
+            this.handymanmyaccountform_expertfieldCombo = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -57,13 +57,13 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.handymanmyaccountform_streetTextBox);
+            this.groupBox1.Controls.Add(this.handymanmyaccountform_barangayTextBox);
+            this.groupBox1.Controls.Add(this.handymanmyaccountform_cityTextBox);
+            this.groupBox1.Controls.Add(this.handymanmyaccountform_municipalityTextBox);
+            this.groupBox1.Controls.Add(this.handymanmyaccountform_contactnumberTextBox);
+            this.groupBox1.Controls.Add(this.handymanmyaccountform_lastnameTextBox);
+            this.groupBox1.Controls.Add(this.handymanmyaccountform_firstnameTextBox);
             this.groupBox1.Controls.Add(this.handymanmyaccountform_usernameTextBox);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
@@ -80,59 +80,75 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Information";
             // 
-            // textBox5
+            // handymanmyaccountform_streetTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(174, 329);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 20);
-            this.textBox5.TabIndex = 15;
+            this.handymanmyaccountform_streetTextBox.Enabled = false;
+            this.handymanmyaccountform_streetTextBox.Location = new System.Drawing.Point(174, 329);
+            this.handymanmyaccountform_streetTextBox.Name = "handymanmyaccountform_streetTextBox";
+            this.handymanmyaccountform_streetTextBox.ReadOnly = true;
+            this.handymanmyaccountform_streetTextBox.Size = new System.Drawing.Size(179, 20);
+            this.handymanmyaccountform_streetTextBox.TabIndex = 15;
             // 
-            // textBox6
+            // handymanmyaccountform_barangayTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(174, 289);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 20);
-            this.textBox6.TabIndex = 14;
+            this.handymanmyaccountform_barangayTextBox.Enabled = false;
+            this.handymanmyaccountform_barangayTextBox.Location = new System.Drawing.Point(174, 289);
+            this.handymanmyaccountform_barangayTextBox.Name = "handymanmyaccountform_barangayTextBox";
+            this.handymanmyaccountform_barangayTextBox.ReadOnly = true;
+            this.handymanmyaccountform_barangayTextBox.Size = new System.Drawing.Size(179, 20);
+            this.handymanmyaccountform_barangayTextBox.TabIndex = 14;
             // 
-            // textBox7
+            // handymanmyaccountform_cityTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(174, 244);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(179, 20);
-            this.textBox7.TabIndex = 13;
+            this.handymanmyaccountform_cityTextBox.Enabled = false;
+            this.handymanmyaccountform_cityTextBox.Location = new System.Drawing.Point(174, 244);
+            this.handymanmyaccountform_cityTextBox.Name = "handymanmyaccountform_cityTextBox";
+            this.handymanmyaccountform_cityTextBox.ReadOnly = true;
+            this.handymanmyaccountform_cityTextBox.Size = new System.Drawing.Size(179, 20);
+            this.handymanmyaccountform_cityTextBox.TabIndex = 13;
             // 
-            // textBox8
+            // handymanmyaccountform_municipalityTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(174, 204);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(179, 20);
-            this.textBox8.TabIndex = 12;
+            this.handymanmyaccountform_municipalityTextBox.Enabled = false;
+            this.handymanmyaccountform_municipalityTextBox.Location = new System.Drawing.Point(174, 204);
+            this.handymanmyaccountform_municipalityTextBox.Name = "handymanmyaccountform_municipalityTextBox";
+            this.handymanmyaccountform_municipalityTextBox.ReadOnly = true;
+            this.handymanmyaccountform_municipalityTextBox.Size = new System.Drawing.Size(179, 20);
+            this.handymanmyaccountform_municipalityTextBox.TabIndex = 12;
             // 
-            // textBox3
+            // handymanmyaccountform_contactnumberTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(174, 160);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 11;
+            this.handymanmyaccountform_contactnumberTextBox.Enabled = false;
+            this.handymanmyaccountform_contactnumberTextBox.Location = new System.Drawing.Point(174, 160);
+            this.handymanmyaccountform_contactnumberTextBox.Name = "handymanmyaccountform_contactnumberTextBox";
+            this.handymanmyaccountform_contactnumberTextBox.ReadOnly = true;
+            this.handymanmyaccountform_contactnumberTextBox.Size = new System.Drawing.Size(179, 20);
+            this.handymanmyaccountform_contactnumberTextBox.TabIndex = 11;
             // 
-            // textBox4
+            // handymanmyaccountform_lastnameTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(174, 120);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 10;
+            this.handymanmyaccountform_lastnameTextBox.Enabled = false;
+            this.handymanmyaccountform_lastnameTextBox.Location = new System.Drawing.Point(174, 120);
+            this.handymanmyaccountform_lastnameTextBox.Name = "handymanmyaccountform_lastnameTextBox";
+            this.handymanmyaccountform_lastnameTextBox.ReadOnly = true;
+            this.handymanmyaccountform_lastnameTextBox.Size = new System.Drawing.Size(179, 20);
+            this.handymanmyaccountform_lastnameTextBox.TabIndex = 10;
             // 
-            // textBox2
+            // handymanmyaccountform_firstnameTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(174, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 20);
-            this.textBox2.TabIndex = 9;
+            this.handymanmyaccountform_firstnameTextBox.Enabled = false;
+            this.handymanmyaccountform_firstnameTextBox.Location = new System.Drawing.Point(174, 75);
+            this.handymanmyaccountform_firstnameTextBox.Name = "handymanmyaccountform_firstnameTextBox";
+            this.handymanmyaccountform_firstnameTextBox.ReadOnly = true;
+            this.handymanmyaccountform_firstnameTextBox.Size = new System.Drawing.Size(179, 20);
+            this.handymanmyaccountform_firstnameTextBox.TabIndex = 9;
             // 
             // handymanmyaccountform_usernameTextBox
             // 
+            this.handymanmyaccountform_usernameTextBox.Enabled = false;
             this.handymanmyaccountform_usernameTextBox.Location = new System.Drawing.Point(174, 35);
             this.handymanmyaccountform_usernameTextBox.Name = "handymanmyaccountform_usernameTextBox";
+            this.handymanmyaccountform_usernameTextBox.ReadOnly = true;
             this.handymanmyaccountform_usernameTextBox.Size = new System.Drawing.Size(179, 20);
             this.handymanmyaccountform_usernameTextBox.TabIndex = 8;
             // 
@@ -211,8 +227,8 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.myaccountform_editmyaccountButton);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.handymanmyaccountform_aboutTextBox);
+            this.groupBox2.Controls.Add(this.handymanmyaccountform_expertfieldCombo);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Location = new System.Drawing.Point(484, 28);
@@ -230,27 +246,27 @@
             this.myaccountform_editmyaccountButton.Text = "Edit Account Information";
             this.myaccountform_editmyaccountButton.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // handymanmyaccountform_aboutTextBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(20, 98);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(232, 125);
-            this.textBox9.TabIndex = 3;
+            this.handymanmyaccountform_aboutTextBox.Location = new System.Drawing.Point(20, 98);
+            this.handymanmyaccountform_aboutTextBox.Multiline = true;
+            this.handymanmyaccountform_aboutTextBox.Name = "handymanmyaccountform_aboutTextBox";
+            this.handymanmyaccountform_aboutTextBox.Size = new System.Drawing.Size(232, 125);
+            this.handymanmyaccountform_aboutTextBox.TabIndex = 3;
             // 
-            // comboBox1
+            // handymanmyaccountform_expertfieldCombo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.handymanmyaccountform_expertfieldCombo.FormattingEnabled = true;
+            this.handymanmyaccountform_expertfieldCombo.Items.AddRange(new object[] {
             "Woodwork",
             "Construction",
             "Plumbing",
             "Painting"});
-            this.comboBox1.Location = new System.Drawing.Point(131, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "<choose>";
+            this.handymanmyaccountform_expertfieldCombo.Location = new System.Drawing.Point(131, 31);
+            this.handymanmyaccountform_expertfieldCombo.Name = "handymanmyaccountform_expertfieldCombo";
+            this.handymanmyaccountform_expertfieldCombo.Size = new System.Drawing.Size(121, 21);
+            this.handymanmyaccountform_expertfieldCombo.TabIndex = 2;
+            this.handymanmyaccountform_expertfieldCombo.Text = "<choose>";
             // 
             // label10
             // 
@@ -300,17 +316,17 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox handymanmyaccountform_streetTextBox;
+        private System.Windows.Forms.TextBox handymanmyaccountform_barangayTextBox;
+        private System.Windows.Forms.TextBox handymanmyaccountform_cityTextBox;
+        private System.Windows.Forms.TextBox handymanmyaccountform_municipalityTextBox;
+        private System.Windows.Forms.TextBox handymanmyaccountform_contactnumberTextBox;
+        private System.Windows.Forms.TextBox handymanmyaccountform_lastnameTextBox;
+        private System.Windows.Forms.TextBox handymanmyaccountform_firstnameTextBox;
         private System.Windows.Forms.TextBox handymanmyaccountform_usernameTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox handymanmyaccountform_aboutTextBox;
+        private System.Windows.Forms.ComboBox handymanmyaccountform_expertfieldCombo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button myaccountform_editmyaccountButton;

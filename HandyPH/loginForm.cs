@@ -64,5 +64,12 @@ namespace HandyPH
                 MessageBox.Show("Incorrect credentials!", "ERROR: login_error");
             }
         }
+
+        private void loginform_signupbutton_Click(object sender, EventArgs e)
+        {
+            signupForm signup = new signupForm();
+            signup.Show();
+            this.Hide();
+        }
     }
 }
