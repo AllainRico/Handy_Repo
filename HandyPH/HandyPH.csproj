@@ -58,6 +58,12 @@
     <Compile Include="handyman_HomeForm.Designer.cs">
       <DependentUpon>handyman_HomeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="handyman_MyAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="handyman_MyAccountForm.Designer.cs">
+      <DependentUpon>handyman_MyAccountForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="homeowner_HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="handyman_HomeForm.resx">
       <DependentUpon>handyman_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="handyman_MyAccountForm.resx">
+      <DependentUpon>handyman_MyAccountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homeowner_HomeForm.resx">
       <DependentUpon>homeowner_HomeForm.cs</DependentUpon>

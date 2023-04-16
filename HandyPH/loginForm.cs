@@ -45,10 +45,10 @@ namespace HandyPH
                 else
                 {
                     MessageBox.Show("Welcome user");
-                    userHome home = new userHome();
+                    handyman_HomeForm handyman_home = new handyman_HomeForm();
                     //Borrow form2 = new Borrow();
                     //home.usernametext.Text = usernameTextBox.Text;
-                    home.Show();
+                    handyman_home.Show();
                     Visible = false;
                 }
             }
