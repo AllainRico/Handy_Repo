@@ -33,17 +33,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.handymanhome_ApplyButton = new System.Windows.Forms.Button();
+            this.handymanhome_jobdescriptionButton = new System.Windows.Forms.TextBox();
+            this.handymanhome_datepostedButton = new System.Windows.Forms.TextBox();
+            this.handymanhome_timeframeButton = new System.Windows.Forms.TextBox();
+            this.handymanhome_basepayButton = new System.Windows.Forms.TextBox();
+            this.handymanhome_postedbyButton = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.handymanhome_ApplyButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.alljobs_datagridview)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,7 @@
             this.alljobs_datagridview.ReadOnly = true;
             this.alljobs_datagridview.Size = new System.Drawing.Size(637, 365);
             this.alljobs_datagridview.TabIndex = 1;
+            this.alljobs_datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.alljobs_datagridview_CellContentClick);
             // 
             // textBox1
             // 
@@ -86,11 +87,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.handymanhome_ApplyButton);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.handymanhome_jobdescriptionButton);
+            this.groupBox1.Controls.Add(this.handymanhome_datepostedButton);
+            this.groupBox1.Controls.Add(this.handymanhome_timeframeButton);
+            this.groupBox1.Controls.Add(this.handymanhome_basepayButton);
+            this.groupBox1.Controls.Add(this.handymanhome_postedbyButton);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
@@ -102,23 +103,69 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // label2
+            // handymanhome_ApplyButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Posted By";
+            this.handymanhome_ApplyButton.Location = new System.Drawing.Point(132, 290);
+            this.handymanhome_ApplyButton.Name = "handymanhome_ApplyButton";
+            this.handymanhome_ApplyButton.Size = new System.Drawing.Size(75, 23);
+            this.handymanhome_ApplyButton.TabIndex = 10;
+            this.handymanhome_ApplyButton.Text = "Apply";
+            this.handymanhome_ApplyButton.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // handymanhome_jobdescriptionButton
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Base Pay";
+            this.handymanhome_jobdescriptionButton.Enabled = false;
+            this.handymanhome_jobdescriptionButton.Location = new System.Drawing.Point(10, 170);
+            this.handymanhome_jobdescriptionButton.Multiline = true;
+            this.handymanhome_jobdescriptionButton.Name = "handymanhome_jobdescriptionButton";
+            this.handymanhome_jobdescriptionButton.ReadOnly = true;
+            this.handymanhome_jobdescriptionButton.Size = new System.Drawing.Size(202, 114);
+            this.handymanhome_jobdescriptionButton.TabIndex = 9;
+            // 
+            // handymanhome_datepostedButton
+            // 
+            this.handymanhome_datepostedButton.Enabled = false;
+            this.handymanhome_datepostedButton.Location = new System.Drawing.Point(87, 118);
+            this.handymanhome_datepostedButton.Name = "handymanhome_datepostedButton";
+            this.handymanhome_datepostedButton.ReadOnly = true;
+            this.handymanhome_datepostedButton.Size = new System.Drawing.Size(125, 20);
+            this.handymanhome_datepostedButton.TabIndex = 8;
+            // 
+            // handymanhome_timeframeButton
+            // 
+            this.handymanhome_timeframeButton.Enabled = false;
+            this.handymanhome_timeframeButton.Location = new System.Drawing.Point(87, 85);
+            this.handymanhome_timeframeButton.Name = "handymanhome_timeframeButton";
+            this.handymanhome_timeframeButton.ReadOnly = true;
+            this.handymanhome_timeframeButton.Size = new System.Drawing.Size(125, 20);
+            this.handymanhome_timeframeButton.TabIndex = 7;
+            // 
+            // handymanhome_basepayButton
+            // 
+            this.handymanhome_basepayButton.Enabled = false;
+            this.handymanhome_basepayButton.Location = new System.Drawing.Point(87, 50);
+            this.handymanhome_basepayButton.Name = "handymanhome_basepayButton";
+            this.handymanhome_basepayButton.ReadOnly = true;
+            this.handymanhome_basepayButton.Size = new System.Drawing.Size(125, 20);
+            this.handymanhome_basepayButton.TabIndex = 6;
+            // 
+            // handymanhome_postedbyButton
+            // 
+            this.handymanhome_postedbyButton.Enabled = false;
+            this.handymanhome_postedbyButton.Location = new System.Drawing.Point(87, 17);
+            this.handymanhome_postedbyButton.Name = "handymanhome_postedbyButton";
+            this.handymanhome_postedbyButton.ReadOnly = true;
+            this.handymanhome_postedbyButton.Size = new System.Drawing.Size(125, 20);
+            this.handymanhome_postedbyButton.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 154);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Job Description";
             // 
             // label4
             // 
@@ -138,69 +185,23 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Time Frame";
             // 
-            // label6
+            // label3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 154);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Job Description";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Base Pay";
             // 
-            // textBox2
+            // label2
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(87, 17);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(125, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(87, 50);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(125, 20);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(87, 85);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(125, 20);
-            this.textBox4.TabIndex = 7;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(87, 118);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(125, 20);
-            this.textBox5.TabIndex = 8;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(10, 170);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(202, 114);
-            this.textBox6.TabIndex = 9;
-            // 
-            // handymanhome_ApplyButton
-            // 
-            this.handymanhome_ApplyButton.Location = new System.Drawing.Point(132, 290);
-            this.handymanhome_ApplyButton.Name = "handymanhome_ApplyButton";
-            this.handymanhome_ApplyButton.Size = new System.Drawing.Size(75, 23);
-            this.handymanhome_ApplyButton.TabIndex = 10;
-            this.handymanhome_ApplyButton.Text = "Apply";
-            this.handymanhome_ApplyButton.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Posted By";
             // 
             // handyman_HomeForm
             // 
@@ -231,11 +232,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox handymanhome_jobdescriptionButton;
+        private System.Windows.Forms.TextBox handymanhome_datepostedButton;
+        private System.Windows.Forms.TextBox handymanhome_timeframeButton;
+        private System.Windows.Forms.TextBox handymanhome_basepayButton;
+        private System.Windows.Forms.TextBox handymanhome_postedbyButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

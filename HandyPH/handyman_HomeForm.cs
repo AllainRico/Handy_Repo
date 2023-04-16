@@ -39,5 +39,19 @@ namespace HandyPH
 
             //this.alljobs_datagridview(this.libsysdbDataSet.booksTable)
         }
+
+        private void alljobs_datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.alljobs_datagridview.Rows[e.RowIndex];
+
+                handymanhome_postedbyButton.Text = row.Cells["homeowner_ID"].Value.ToString();
+                handymanhome_basepayButton.Text = row.Cells["basepay"].Value.ToString();
+                handymanhome_timeframeButton.Text = row.Cells["timeframe"].Value.ToString();
+                handymanhome_datepostedButton.Text = row.Cells["dateposted"].Value.ToString();
+                handymanhome_jobdescriptionButton.Text = row.Cells["job_description"].Value.ToString();
+            }
+        }
     }
 }
