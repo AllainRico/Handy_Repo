@@ -38,7 +38,7 @@
             this.handymanhome_datepostedButton = new System.Windows.Forms.TextBox();
             this.handymanhome_timeframeButton = new System.Windows.Forms.TextBox();
             this.handymanhome_basepayButton = new System.Windows.Forms.TextBox();
-            this.handymanhome_postedbyButton = new System.Windows.Forms.TextBox();
+            this.handymanhome_postedbyTextbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -91,7 +91,7 @@
             this.groupBox1.Controls.Add(this.handymanhome_datepostedButton);
             this.groupBox1.Controls.Add(this.handymanhome_timeframeButton);
             this.groupBox1.Controls.Add(this.handymanhome_basepayButton);
-            this.groupBox1.Controls.Add(this.handymanhome_postedbyButton);
+            this.groupBox1.Controls.Add(this.handymanhome_postedbyTextbox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
@@ -111,6 +111,7 @@
             this.handymanhome_ApplyButton.TabIndex = 10;
             this.handymanhome_ApplyButton.Text = "Apply";
             this.handymanhome_ApplyButton.UseVisualStyleBackColor = true;
+            this.handymanhome_ApplyButton.Click += new System.EventHandler(this.handymanhome_ApplyButton_Click);
             // 
             // handymanhome_jobdescriptionButton
             // 
@@ -149,14 +150,14 @@
             this.handymanhome_basepayButton.Size = new System.Drawing.Size(125, 20);
             this.handymanhome_basepayButton.TabIndex = 6;
             // 
-            // handymanhome_postedbyButton
+            // handymanhome_postedbyTextbox
             // 
-            this.handymanhome_postedbyButton.Enabled = false;
-            this.handymanhome_postedbyButton.Location = new System.Drawing.Point(87, 17);
-            this.handymanhome_postedbyButton.Name = "handymanhome_postedbyButton";
-            this.handymanhome_postedbyButton.ReadOnly = true;
-            this.handymanhome_postedbyButton.Size = new System.Drawing.Size(125, 20);
-            this.handymanhome_postedbyButton.TabIndex = 5;
+            this.handymanhome_postedbyTextbox.Enabled = false;
+            this.handymanhome_postedbyTextbox.Location = new System.Drawing.Point(87, 17);
+            this.handymanhome_postedbyTextbox.Name = "handymanhome_postedbyTextbox";
+            this.handymanhome_postedbyTextbox.ReadOnly = true;
+            this.handymanhome_postedbyTextbox.Size = new System.Drawing.Size(125, 20);
+            this.handymanhome_postedbyTextbox.TabIndex = 5;
             // 
             // label6
             // 
@@ -236,7 +237,7 @@
         private System.Windows.Forms.TextBox handymanhome_datepostedButton;
         private System.Windows.Forms.TextBox handymanhome_timeframeButton;
         private System.Windows.Forms.TextBox handymanhome_basepayButton;
-        private System.Windows.Forms.TextBox handymanhome_postedbyButton;
+        private System.Windows.Forms.TextBox handymanhome_postedbyTextbox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

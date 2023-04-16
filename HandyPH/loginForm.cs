@@ -13,6 +13,9 @@ namespace HandyPH
 {
     public partial class loginForm : Form
     {
+
+        public String TextToPass { get; set; }
+
         public loginForm()
         {
             InitializeComponent();
@@ -37,6 +40,7 @@ namespace HandyPH
 
                 if (login_usernametextBox.Text == "admin")
                 {
+                    String username = TextToPass;
                     MessageBox.Show("Welcome admin");
                     adminHome home = new adminHome();
                     home.Show();
@@ -44,10 +48,13 @@ namespace HandyPH
                 }
                 else
                 {
+                    String username = login_usernametextBox.Text;
                     MessageBox.Show("Welcome user");
                     handyman_HomeForm handyman_home = new handyman_HomeForm();
                     //Borrow form2 = new Borrow();
                     //home.usernametext.Text = usernameTextBox.Text;
+                    
+                    handyman_home.handyhome_username = username;
                     handyman_home.Show();
                     Visible = false;
                 }
