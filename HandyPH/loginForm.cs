@@ -23,12 +23,13 @@ namespace HandyPH
 
         private void login_button_Click(object sender, EventArgs e)
         {
+            String encpass = encrypt.Decrypt(login_passwordtextBox.Text);
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             //change this shit kay ma error ni bai
 
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from tblUsers where username='" + login_usernametextBox.Text + "' and password = '" + login_passwordtextBox.Text + "'", con);
+            SqlCommand cmd = new SqlCommand("select * from tblUsers where username='" + login_usernametextBox.Text + "' and password = '" + encpass + "'", con);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);
