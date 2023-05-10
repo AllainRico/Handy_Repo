@@ -71,17 +71,14 @@ namespace HandyPH
                             }
                             if (hasUpperCase && hasLowerCase)
                             {
-                                //string encpass = Aescryp.(signupform_passwordtextBox.Text);
-                                string encpass = signupform_passwordtextBox.Text;
+                                string encpass = encrypt.Encrypt(signupform_passwordtextBox.Text);
+                                //string encpass = signupform_passwordtextBox.Text;
 
-                                String st = "INSERT INTO usersTable(username,pass) values (@username, @pass)";
+                                String st = "INSERT INTO tblUsers(username,password) values (@username, @password)";
                                 SqlCommand cmd1 = new SqlCommand(st, con);
                                 cmd1.Parameters.AddWithValue("@username", signupform_usernametextBox.Text);
-                                cmd1.Parameters.AddWithValue("@pass", encpass);
+                                cmd1.Parameters.AddWithValue("@password", encpass);
                                 cmd1.ExecuteNonQuery();
-                                SqlCommand cmd2 = new SqlCommand("INSERT INTO borrowersTable(username) VALUES (@username)", con);
-                                cmd2.Parameters.AddWithValue("@username", signupform_usernametextBox.Text);
-                                cmd2.ExecuteNonQuery();
                                 con.Close();
 
                                 MessageBox.Show("Account created successfully! - Please input credentials in the Login Form", "Successful!");
@@ -101,7 +98,7 @@ namespace HandyPH
             }
             else
             {
-                MessageBox.Show("Username already taken");
+                MessageBox.Show("Username already taken", "ERROR: 0");
             }
 
         }
