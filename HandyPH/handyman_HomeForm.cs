@@ -32,6 +32,12 @@ namespace HandyPH
 
         private void handyman_HomeForm_Load(object sender, EventArgs e)
         {
+
+            if (handymanhome_postedbyTextbox.Text == "")
+            {
+                handymanhome_ApplyButton.Visible = false;
+            }
+
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
