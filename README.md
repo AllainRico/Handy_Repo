@@ -5,12 +5,12 @@ repo for initial development for HandyApp
 User Registration
   Check Unique (done)
 	Prompts (done)
-	Encryption Password
+	Encryption Password (done)
 	Decryption Function
 	Add Record (done)
 
 Log In	
-	Check - Correctness
+	Check - Correctness 
 	Message/Successful/Not
 	Load Main UI
 
