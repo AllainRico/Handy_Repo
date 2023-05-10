@@ -30,6 +30,7 @@
         {
             this.userhome_handymanbutton = new System.Windows.Forms.Button();
             this.userhome_homeownerbutton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // userhome_handymanbutton
@@ -52,17 +53,28 @@
             this.userhome_homeownerbutton.UseVisualStyleBackColor = true;
             this.userhome_homeownerbutton.Click += new System.EventHandler(this.userhome_homeownerbutton_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(512, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Visible = false;
+            // 
             // userHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.userhome_homeownerbutton);
             this.Controls.Add(this.userhome_handymanbutton);
             this.Name = "userHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
+            this.Text = "What are you?";
+            this.Load += new System.EventHandler(this.userHome_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +82,6 @@
 
         private System.Windows.Forms.Button userhome_handymanbutton;
         private System.Windows.Forms.Button userhome_homeownerbutton;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

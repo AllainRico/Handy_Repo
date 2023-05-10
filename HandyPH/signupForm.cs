@@ -84,8 +84,9 @@ namespace HandyPH
                                 MessageBox.Show("Account created successfully! - Please input credentials in the Login Form", "Successful!");
 
                                 this.Hide();
-                                loginForm login = new loginForm();
-                                login.Show();
+                                userHome step2 = new userHome();
+                                step2.username = signupform_usernametextBox.Text;
+                                step2.Show();
                             }
                             else
                             {

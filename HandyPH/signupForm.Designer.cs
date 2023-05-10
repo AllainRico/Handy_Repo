@@ -110,7 +110,7 @@
             this.Controls.Add(this.signupform_usernametextBox);
             this.Controls.Add(this.loginusernamelabel);
             this.Name = "signupForm";
-            this.Text = "signupForm";
+            this.Text = "Create User Account";
             this.ResumeLayout(false);
             this.PerformLayout();
 

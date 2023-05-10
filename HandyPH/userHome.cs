@@ -12,6 +12,7 @@ namespace HandyPH
 {
     public partial class userHome : Form
     {
+        public string username;
         public userHome()
         {
             InitializeComponent();
@@ -19,8 +20,9 @@ namespace HandyPH
 
         private void userhome_handymanbutton_Click(object sender, EventArgs e)
         {
-            handyman_HomeForm handyman = new handyman_HomeForm();
-            handyman.Show();
+            updateInfo_HandymanForm step3 = new updateInfo_HandymanForm();
+            step3.username = textBox1.Text;
+            step3.Show();
             this.Hide();
         }
 
@@ -29,6 +31,11 @@ namespace HandyPH
             homeowner_HomeForm homeowner = new homeowner_HomeForm();
             homeowner.Show();
             this.Hide();
+        }
+
+        private void userHome_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = username;
         }
     }
 }

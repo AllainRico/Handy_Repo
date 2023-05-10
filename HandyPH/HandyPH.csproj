@@ -91,6 +91,12 @@
     <Compile Include="signupForm.Designer.cs">
       <DependentUpon>signupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="updateInfo_HandymanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateInfo_HandymanForm.Designer.cs">
+      <DependentUpon>updateInfo_HandymanForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="userHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="signupForm.resx">
       <DependentUpon>signupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateInfo_HandymanForm.resx">
+      <DependentUpon>updateInfo_HandymanForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userHome.resx">
       <DependentUpon>userHome.cs</DependentUpon>
