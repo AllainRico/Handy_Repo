@@ -9,13 +9,14 @@ User Registration
 	Add Record (done)
 
 Log In	
-	Check - Correctness
+	Check - Correctness (done)
 	Decryption Function
-	Message/Successful/Not
-	Load Main UI
+	Message/Successful/Not (done)
+	Load Main UI (done)
 
 Profile Creation
-  Update Record (Update details sa user. like handyman ba siya then whats his/her specialty and personal infos)
+  Update Record 
+  (Update details sa user. like handyman ba siya then whats his/her specialty and personal infos)
   
 Posting of Job Requests
 	Add
