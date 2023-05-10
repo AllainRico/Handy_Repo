@@ -2,34 +2,34 @@
 repo for initial development for HandyApp
 
 **SYSTEMS FUNCTIONALITIES:**
-**User Registration**
-  Check Unique
-	Prompts
+User Registration
+  Check Unique (done)
+	Prompts (done)
 	Encryption Password
 	Decryption Function
-	Add Record
+	Add Record (done)
 
-**Log In**	
+Log In	
 	Check - Correctness
 	Message/Successful/Not
 	Load Main UI
 
-**Profile Creation**
+Profile Creation
   Update Record (Update details sa user. like handyman ba siya then whats his/her specialty and personal infos)
   
-**Posting of Job Requests**
-       Add
-	     Update
-	     Status/Delete
+Posting of Job Requests
+	Add
+	Update
+	Status/Delete
        
-**Searching for Job Posted**
-       View
-	     Search
+Searching for Job Posted
+	View
+	Search
        
-**Applying for Job Posted**
+Applying for Job Posted
       Increase Inventory
 
-**Reports**
+Reports
   Simple
 	Date Filter
 	Labels/Headers
