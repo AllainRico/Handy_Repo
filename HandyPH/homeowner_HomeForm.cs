@@ -12,6 +12,7 @@ namespace HandyPH
 {
     public partial class homeowner_HomeForm : Form
     {
+        public string homeownerhome_username;
         public homeowner_HomeForm()
         {
             InitializeComponent();
