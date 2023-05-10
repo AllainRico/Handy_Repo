@@ -41,6 +41,7 @@ namespace HandyPH
 
             applyform_paymentTextBox.Clear();
             MessageBox.Show("Application sent successfully", "Success");
+            this.Close();
         }
 
        
