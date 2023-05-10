@@ -6,11 +6,11 @@ User Registration
   Check Unique (done)
 	Prompts (done)
 	Encryption Password (done)
-	Decryption Function
 	Add Record (done)
 
 Log In	
-	Check - Correctness 
+	Check - Correctness
+	Decryption Function
 	Message/Successful/Not
 	Load Main UI
 
