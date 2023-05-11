@@ -27,7 +27,7 @@ namespace HandyPH
         private void saveinfobutton_Click_1(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
             String st = "INSERT INTO [dbo].[tblHomeowners] values (@username, @firstname, @lastname, @contactnumber, @municipality, @city, @barangay, @street)";
             SqlCommand cmd1 = new SqlCommand(st, con);

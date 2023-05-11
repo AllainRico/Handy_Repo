@@ -17,15 +17,30 @@ namespace HandyPH
         public homeowner_HomeForm()
         {
             InitializeComponent();
+            load();
         }
+        public void load()
+        {
+            using (SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True"))
+            {
+                con.Open();
 
+                SqlCommand cmd = new SqlCommand("SELECT * FROM [dbo].[tblCreateJob] WHERE homeowner_ID = @HomeownerID", con);
+                cmd.Parameters.AddWithValue("@HomeownerID", textBox1.Text);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+        }
         private void homeowner_HomeForm_Load(object sender, EventArgs e)
         {
             //textBox1.Text= homeownerhome_username;
             int ID;
 
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
 
             SqlDataAdapter sqlData = new SqlDataAdapter("SELECT homeowner_ID FROM[dbo].[tblHomeowners] where username = '" + this.homeownerhome_username + "'", con);
@@ -63,7 +78,7 @@ namespace HandyPH
         private void postjobbutton_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
 
             SqlCommand cmd = new SqlCommand("insert into [dbo].[tblCreateJob] VALUES ('" + textBox1.Text + "', '" + textBox4.Text + "', '" + textBox3.Text + "', '" + textBox2.Text + "', GETDATE());", con);
@@ -73,6 +88,7 @@ namespace HandyPH
             textBox3.Clear();
             textBox4.Clear();
             MessageBox.Show("Job posted successfully", "Success");
+            load();
         }
     }
 }

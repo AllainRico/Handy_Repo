@@ -25,7 +25,7 @@ namespace HandyPH
         {
             homeownermyaccountform_usernameTextBox.Text = homeowner_username;
 
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
             SqlCommand cmd = new SqlCommand("select [firstname], [lastname], [contactnumber], [municipality], [city], [barangay],[street] from [dbo].[tblHomeowners] where username = '" + homeownermyaccountform_usernameTextBox.Text + "';", con);
             SqlDataReader da = cmd.ExecuteReader();

@@ -39,7 +39,7 @@ namespace HandyPH
             }
 
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
 
             //sayop ni earl. dapat ang makita kay joblisting

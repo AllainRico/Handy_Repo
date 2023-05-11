@@ -33,7 +33,7 @@ namespace HandyPH
         private void applyform_applyjobButton_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
 
             SqlCommand cmd = new SqlCommand("insert into tblApplyJob VALUES ('"+ applyform_jobidTextBox.Text + "', '" + applyform_handymanIDtextbox.Text + "', '"+ applyform_paymentTextBox.Text + "', GETDATE());", con);

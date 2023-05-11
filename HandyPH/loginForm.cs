@@ -27,7 +27,7 @@ namespace HandyPH
             string encpass = encrypt.Encrypt(login_passwordtextBox.Text);
             string decryptedPassword = encrypt.Decrypt(encpass);
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-S8N66SD\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             //change this shit kay ma error ni bai
 
             con.Open();
@@ -43,7 +43,7 @@ namespace HandyPH
             if (dt.Rows.Count > 0)
             {
                 string accountType = dt.Rows[0]["username"].ToString();
-                if (accountType == "ADMIN")
+                if (accountType == "Admin")
                 {
                     String username = TextToPass;
                     MessageBox.Show("Welcome admin");
