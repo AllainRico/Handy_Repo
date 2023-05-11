@@ -15,7 +15,7 @@ Log In
 	Load Main UI (done)
 
 Profile Creation
-  Update Record 
+  Update Record (done)
   (Update details sa user. like handyman ba siya then whats his/her specialty and personal infos)
   
 Posting of Job Requests
@@ -24,11 +24,11 @@ Posting of Job Requests
 	Status/Delete
        
 Searching for Job Posted
-	View
-	Search
+	View (done)
+	Search (done)
        
 Applying for Job Posted
-      Increase Inventory
+      Increase Inventory (done)
 
 Reports
   Simple
