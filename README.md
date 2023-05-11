@@ -19,9 +19,7 @@ Profile Creation
   (Update details sa user. like handyman ba siya then whats his/her specialty and personal infos)
   
 Posting of Job Requests
-	Add
-	Update
-	Status/Delete
+	Add (done)
        
 Searching for Job Posted
 	View (done)
