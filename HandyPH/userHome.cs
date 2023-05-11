@@ -28,7 +28,8 @@ namespace HandyPH
 
         private void userhome_homeownerbutton_Click(object sender, EventArgs e)
         {
-            homeowner_HomeForm homeowner = new homeowner_HomeForm();
+            updateInfo_HomeownerForm homeowner = new updateInfo_HomeownerForm();
+            homeowner.username = textBox1.Text;
             homeowner.Show();
             this.Hide();
         }
