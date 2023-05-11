@@ -53,15 +53,36 @@ namespace HandyPH
                 }
                 else
                 {
-                    String username = login_usernametextBox.Text;
-                    MessageBox.Show("Welcome user");
-                    handyman_HomeForm handyman_home = new handyman_HomeForm();
-                    //Borrow form2 = new Borrow();
-                    //home.usernametext.Text = usernameTextBox.Text;
+                    SqlCommand cmd2 = new SqlCommand("select * from tblHandyman where username='" + login_usernametextBox.Text + "'", con);
+                    SqlDataAdapter sda2 = new SqlDataAdapter(cmd2);
+                    DataTable dt2 = new DataTable();
+                    sda2.Fill(dt2);
 
-                    handyman_home.handyhome_username = username;
-                    handyman_home.Show();
-                    Visible = false;
+                    if (dt2.Rows.Count > 0) //checks if username is inside the handyman table
+                    {
+                        String username = login_usernametextBox.Text;
+                        MessageBox.Show("Welcome user");
+                        handyman_HomeForm handyman_home = new handyman_HomeForm();
+                        //Borrow form2 = new Borrow();
+                        //home.usernametext.Text = usernameTextBox.Text;
+
+                        handyman_home.handyhome_username = username;
+                        handyman_home.Show();
+                        Visible = false;
+                    }
+                    else
+                    {
+                        String username = login_usernametextBox.Text;
+                        MessageBox.Show("Welcome user");
+                        homeowner_HomeForm homeowner_home = new homeowner_HomeForm();
+                        //Borrow form2 = new Borrow();
+                        //home.usernametext.Text = usernameTextBox.Text;
+
+                        homeowner_home.homeownerhome_username = username;
+                        homeowner_home.Show();
+                        Visible = false;
+                    }
+
                 }
             }
             else
