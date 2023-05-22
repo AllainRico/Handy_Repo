@@ -15,29 +15,27 @@ namespace HandyPH
     public partial class handyman_HomeForm : Form
     {
         public string handyhome_username;
+        public string job_ID;
         public String TextToPass { get; set; }
 
         public handyman_HomeForm()
         {
             InitializeComponent();
+            
+
         }
 
         private void handymanhome_myaccountbutton_Click(object sender, EventArgs e)
         {
             handyman_MyAccountForm myaccount = new handyman_MyAccountForm();
-            myaccount.handyman_username = this.handyhome_username;
+            myaccount.handyman_username = usernametxtbox.Text;
             myaccount.Show();
             //this.Hide();
         }
 
         private void handyman_HomeForm_Load(object sender, EventArgs e)
         {
-
-            if (handymanhome_postedbyTextbox.Text == "")
-            {
-                handymanhome_ApplyButton.Visible = false;
-            }
-
+            usernametxtbox.Text = handyhome_username;
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             con.Open();
@@ -47,7 +45,7 @@ namespace HandyPH
             DataTable dtbl = new DataTable();
             sqlData.Fill(dtbl);
 
-            alljobs_datagridview.DataSource = dtbl;
+            dataGridView1.DataSource = dtbl;
 
             //this.alljobs_datagridview(this.libsysdbDataSet.booksTable)
         }
@@ -56,9 +54,9 @@ namespace HandyPH
         {
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow row = this.alljobs_datagridview.Rows[e.RowIndex];
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
 
-                
+                job_IDtxtbox.Text = row.Cells["job_ID"].Value.ToString();
                 handymanhome_postedbyTextbox.Text = row.Cells["homeowner_ID"].Value.ToString();
                 handymanhome_basepayButton.Text = row.Cells["basepay"].Value.ToString();
                 handymanhome_timeframeButton.Text = row.Cells["timeframe"].Value.ToString();
@@ -69,6 +67,7 @@ namespace HandyPH
 
         private void handymanhome_ApplyButton_Click(object sender, EventArgs e)
         {
+            //int ID;
             int ID;
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
@@ -85,7 +84,7 @@ namespace HandyPH
                 ID = Convert.ToInt32(dtbl.Rows[0]["handyman_ID"]);
                 applyform apply = new applyform();
                 apply.handyman_ID = ID;
-                apply.job_ID = int.Parse(handymanhome_postedbyTextbox.Text);
+                apply.job_ID = job_IDtxtbox.Text;
 
                 apply.Show();
             }
@@ -95,8 +94,31 @@ namespace HandyPH
         private void handymanhome_myaccountbutton_Click_1(object sender, EventArgs e)
         {
             handyman_MyAccountForm myacc = new handyman_MyAccountForm();
+            myacc.handyman_username = usernametxtbox.Text;
             myacc.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            loginForm logout = new loginForm();
+            logout.Show();
+            this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                job_IDtxtbox.Text = row.Cells["job_ID"].Value.ToString();
+                handymanhome_postedbyTextbox.Text = row.Cells["homeowner_ID"].Value.ToString();
+                handymanhome_basepayButton.Text = row.Cells["basepay"].Value.ToString();
+                handymanhome_timeframeButton.Text = row.Cells["timeframe"].Value.ToString();
+                handymanhome_datepostedButton.Text = row.Cells["dateposted"].Value.ToString();
+                handymanhome_jobdescriptionButton.Text = row.Cells["job_description"].Value.ToString();
+            }
         }
     }
 }

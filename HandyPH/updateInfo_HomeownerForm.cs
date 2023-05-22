@@ -44,10 +44,20 @@ namespace HandyPH
 
             MessageBox.Show("Information updated successfully!", "Successful!");
 
-            this.Hide();
-            homeowner_HomeForm home = new homeowner_HomeForm();
-            home.homeownerhome_username = usernameText.Text;
-            home.Show();
+            //this.Hide();
+            //homeowner_HomeForm home = new homeowner_HomeForm();
+            //home.homeownerhome_username = usernameText.Text;
+            //home.Show();
+
+            String username = usernameText.Text;
+            MessageBox.Show("Welcome user");
+            handyman_HomeForm handyman_home = new handyman_HomeForm();
+            //Borrow form2 = new Borrow();
+            //home.usernametext.Text = usernameTextBox.Text;
+
+            handyman_home.handyhome_username = username;
+            handyman_home.Show();
+            Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

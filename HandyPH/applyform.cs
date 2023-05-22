@@ -15,7 +15,8 @@ namespace HandyPH
     
     public partial class applyform : Form
     {
-        public int handyman_ID, job_ID;
+        public int handyman_ID;
+        public string job_ID;
         public float payment;
         public applyform()
         {

@@ -46,14 +46,26 @@ namespace HandyPH
 
         private void button1_Click(object sender, EventArgs e)
         {
-            handyman_HomeForm homeForm = new handyman_HomeForm();
-            homeForm.Show();
+            String username = handymanmyaccountform_usernameTextBox.Text;
+            handyman_HomeForm handyman_Home = new handyman_HomeForm();
+            //Borrow form2 = new Borrow();
+            //home.usernametext.Text = usernameTextBox.Text;
+
+            handyman_Home.handyhome_username = username;
+            handyman_Home.Show();
             this.Hide();
         }
 
         private void myaccountform_editmyaccountButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            loginForm logout = new loginForm();
+            logout.Show();
+            this.Hide();
         }
     }
 }
