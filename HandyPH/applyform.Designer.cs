@@ -31,22 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(applyform));
             this.applyform_applyjobButton = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.applyform_paymentTextBox = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.applyform_handymanIDtextbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.applyform_jobidTextBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.applyform_handymanIDtextbox = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.applyform_paymentTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@
             this.applyform_applyjobButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
             this.applyform_applyjobButton.FlatAppearance.BorderSize = 0;
             this.applyform_applyjobButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.applyform_applyjobButton.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.applyform_applyjobButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.applyform_applyjobButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.applyform_applyjobButton.Location = new System.Drawing.Point(154, 337);
             this.applyform_applyjobButton.Name = "applyform_applyjobButton";
@@ -63,6 +63,7 @@
             this.applyform_applyjobButton.TabIndex = 59;
             this.applyform_applyjobButton.Text = "Save";
             this.applyform_applyjobButton.UseVisualStyleBackColor = false;
+            this.applyform_applyjobButton.Click += new System.EventHandler(this.applyform_applyjobButton_Click_1);
             // 
             // panel5
             // 
@@ -77,58 +78,27 @@
             this.panel5.Size = new System.Drawing.Size(254, 302);
             this.panel5.TabIndex = 63;
             // 
-            // panel4
+            // label4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
-            this.panel4.Controls.Add(this.applyform_paymentTextBox);
-            this.panel4.Location = new System.Drawing.Point(23, 235);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.panel4.Size = new System.Drawing.Size(207, 46);
-            this.panel4.TabIndex = 46;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(20, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 16);
+            this.label4.TabIndex = 60;
+            this.label4.Text = "Job ID";
             // 
-            // applyform_paymentTextBox
+            // label6
             // 
-            this.applyform_paymentTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
-            this.applyform_paymentTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.applyform_paymentTextBox.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.applyform_paymentTextBox.Location = new System.Drawing.Point(10, 14);
-            this.applyform_paymentTextBox.Multiline = true;
-            this.applyform_paymentTextBox.Name = "applyform_paymentTextBox";
-            this.applyform_paymentTextBox.Size = new System.Drawing.Size(187, 17);
-            this.applyform_paymentTextBox.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
-            this.panel2.Controls.Add(this.applyform_handymanIDtextbox);
-            this.panel2.Location = new System.Drawing.Point(23, 131);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.panel2.Size = new System.Drawing.Size(207, 46);
-            this.panel2.TabIndex = 45;
-            // 
-            // applyform_handymanIDtextbox
-            // 
-            this.applyform_handymanIDtextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
-            this.applyform_handymanIDtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.applyform_handymanIDtextbox.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.applyform_handymanIDtextbox.Location = new System.Drawing.Point(10, 14);
-            this.applyform_handymanIDtextbox.Multiline = true;
-            this.applyform_handymanIDtextbox.Name = "applyform_handymanIDtextbox";
-            this.applyform_handymanIDtextbox.Size = new System.Drawing.Size(187, 17);
-            this.applyform_handymanIDtextbox.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(20, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 17);
-            this.label5.TabIndex = 61;
-            this.label5.Text = "Handyman ID";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(20, 215);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 16);
+            this.label6.TabIndex = 62;
+            this.label6.Text = "Payment (in peso)";
             // 
             // panel3
             // 
@@ -144,41 +114,72 @@
             // 
             this.applyform_jobidTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
             this.applyform_jobidTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.applyform_jobidTextBox.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.applyform_jobidTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.applyform_jobidTextBox.Location = new System.Drawing.Point(10, 14);
             this.applyform_jobidTextBox.Multiline = true;
             this.applyform_jobidTextBox.Name = "applyform_jobidTextBox";
             this.applyform_jobidTextBox.Size = new System.Drawing.Size(187, 17);
             this.applyform_jobidTextBox.TabIndex = 1;
             // 
-            // label6
+            // label5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(20, 215);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 17);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "Payment (in peso)";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(20, 111);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 16);
+            this.label5.TabIndex = 61;
+            this.label5.Text = "Handyman ID";
             // 
-            // label4
+            // panel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(20, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
-            this.label4.TabIndex = 60;
-            this.label4.Text = "Job ID";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
+            this.panel2.Controls.Add(this.applyform_handymanIDtextbox);
+            this.panel2.Location = new System.Drawing.Point(23, 131);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.panel2.Size = new System.Drawing.Size(207, 46);
+            this.panel2.TabIndex = 45;
+            // 
+            // applyform_handymanIDtextbox
+            // 
+            this.applyform_handymanIDtextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
+            this.applyform_handymanIDtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.applyform_handymanIDtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.applyform_handymanIDtextbox.Location = new System.Drawing.Point(10, 14);
+            this.applyform_handymanIDtextbox.Multiline = true;
+            this.applyform_handymanIDtextbox.Name = "applyform_handymanIDtextbox";
+            this.applyform_handymanIDtextbox.Size = new System.Drawing.Size(187, 17);
+            this.applyform_handymanIDtextbox.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
+            this.panel4.Controls.Add(this.applyform_paymentTextBox);
+            this.panel4.Location = new System.Drawing.Point(23, 235);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.panel4.Size = new System.Drawing.Size(207, 46);
+            this.panel4.TabIndex = 46;
+            // 
+            // applyform_paymentTextBox
+            // 
+            this.applyform_paymentTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(229)))), ((int)(((byte)(234)))));
+            this.applyform_paymentTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.applyform_paymentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.applyform_paymentTextBox.Location = new System.Drawing.Point(10, 14);
+            this.applyform_paymentTextBox.Multiline = true;
+            this.applyform_paymentTextBox.Name = "applyform_paymentTextBox";
+            this.applyform_paymentTextBox.Size = new System.Drawing.Size(187, 17);
+            this.applyform_paymentTextBox.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
             this.button1.Location = new System.Drawing.Point(48, 337);
             this.button1.Name = "button1";
@@ -201,11 +202,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Product Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 19);
+            this.label1.Size = new System.Drawing.Size(88, 18);
             this.label1.TabIndex = 63;
             this.label1.Text = "Apply form";
             // 
@@ -222,12 +223,12 @@
             this.Load += new System.EventHandler(this.applyform_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

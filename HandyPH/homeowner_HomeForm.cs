@@ -45,7 +45,6 @@ namespace HandyPH
 
             //here is for loading the shitty dtgridview
 
-            //sayop ni earl. dapat ang makita kay joblisting
             SqlDataAdapter sqlData2 = new SqlDataAdapter("SELECT * FROM[dbo].[tblCreateJob] where homeowner_ID = " + textBox1.Text + "", con);
             DataTable dtbl2 = new DataTable();
             sqlData2.Fill(dtbl2);

@@ -43,8 +43,22 @@ namespace HandyPH
             applyform_paymentTextBox.Clear();
             MessageBox.Show("Application sent successfully", "Success");
             this.Close();
+
+            
         }
 
-       
+        private void applyform_applyjobButton_Click_1(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("insert into tblApplyJob VALUES ('" + applyform_jobidTextBox.Text + "', '" + applyform_handymanIDtextbox.Text + "', '" + applyform_paymentTextBox.Text + "', GETDATE());", con);
+            cmd.ExecuteNonQuery();
+
+            applyform_paymentTextBox.Clear();
+            MessageBox.Show("Application sent successfully", "Success");
+            this.Close();
+        }
     }
 }
