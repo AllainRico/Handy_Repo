@@ -28,221 +28,587 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.handymanhome_myaccountbutton = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(handyman_HomeForm));
             this.alljobs_datagridview = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.handymanhome_ApplyButton = new System.Windows.Forms.Button();
-            this.handymanhome_jobdescriptionButton = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.handymanhome_datepostedButton = new System.Windows.Forms.TextBox();
             this.handymanhome_timeframeButton = new System.Windows.Forms.TextBox();
             this.handymanhome_basepayButton = new System.Windows.Forms.TextBox();
             this.handymanhome_postedbyTextbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.handymanhome_jobdescriptionButton = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.handymanhome_ApplyButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.handymanhome_myaccountbutton = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.alljobs_datagridview)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // handymanhome_myaccountbutton
-            // 
-            this.handymanhome_myaccountbutton.Location = new System.Drawing.Point(758, 12);
-            this.handymanhome_myaccountbutton.Name = "handymanhome_myaccountbutton";
-            this.handymanhome_myaccountbutton.Size = new System.Drawing.Size(100, 35);
-            this.handymanhome_myaccountbutton.TabIndex = 0;
-            this.handymanhome_myaccountbutton.Text = "My Account";
-            this.handymanhome_myaccountbutton.UseVisualStyleBackColor = true;
-            this.handymanhome_myaccountbutton.Click += new System.EventHandler(this.handymanhome_myaccountbutton_Click);
             // 
             // alljobs_datagridview
             // 
-            this.alljobs_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.alljobs_datagridview.Location = new System.Drawing.Point(23, 99);
+            this.alljobs_datagridview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.alljobs_datagridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.alljobs_datagridview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.alljobs_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Product Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.alljobs_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.alljobs_datagridview.ColumnHeadersHeight = 35;
+            this.alljobs_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.alljobs_datagridview.Location = new System.Drawing.Point(249, 0);
             this.alljobs_datagridview.Name = "alljobs_datagridview";
             this.alljobs_datagridview.ReadOnly = true;
-            this.alljobs_datagridview.Size = new System.Drawing.Size(637, 365);
+            this.alljobs_datagridview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.alljobs_datagridview.RowHeadersVisible = false;
+            this.alljobs_datagridview.RowHeadersWidth = 50;
+            this.alljobs_datagridview.RowTemplate.Height = 42;
+            this.alljobs_datagridview.Size = new System.Drawing.Size(899, 617);
             this.alljobs_datagridview.TabIndex = 1;
             this.alljobs_datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.alljobs_datagridview_CellContentClick);
             // 
-            // textBox1
+            // panel4
             // 
-            this.textBox1.Location = new System.Drawing.Point(66, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(580, 20);
-            this.textBox1.TabIndex = 2;
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.handymanhome_datepostedButton);
+            this.panel4.Controls.Add(this.handymanhome_timeframeButton);
+            this.panel4.Controls.Add(this.handymanhome_basepayButton);
+            this.panel4.Controls.Add(this.handymanhome_postedbyTextbox);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.handymanhome_ApplyButton);
+            this.panel4.Location = new System.Drawing.Point(1, 1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(239, 680);
+            this.panel4.TabIndex = 5;
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Search";
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Location = new System.Drawing.Point(16, 355);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(207, 2);
+            this.label5.TabIndex = 56;
             // 
-            // groupBox1
+            // label4
             // 
-            this.groupBox1.Controls.Add(this.handymanhome_ApplyButton);
-            this.groupBox1.Controls.Add(this.handymanhome_jobdescriptionButton);
-            this.groupBox1.Controls.Add(this.handymanhome_datepostedButton);
-            this.groupBox1.Controls.Add(this.handymanhome_timeframeButton);
-            this.groupBox1.Controls.Add(this.handymanhome_basepayButton);
-            this.groupBox1.Controls.Add(this.handymanhome_postedbyTextbox);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(680, 102);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(218, 346);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Location = new System.Drawing.Point(16, 256);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(207, 2);
+            this.label4.TabIndex = 55;
             // 
-            // handymanhome_ApplyButton
+            // label3
             // 
-            this.handymanhome_ApplyButton.Location = new System.Drawing.Point(132, 290);
-            this.handymanhome_ApplyButton.Name = "handymanhome_ApplyButton";
-            this.handymanhome_ApplyButton.Size = new System.Drawing.Size(75, 23);
-            this.handymanhome_ApplyButton.TabIndex = 10;
-            this.handymanhome_ApplyButton.Text = "Apply";
-            this.handymanhome_ApplyButton.UseVisualStyleBackColor = true;
-            this.handymanhome_ApplyButton.Click += new System.EventHandler(this.handymanhome_ApplyButton_Click);
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Location = new System.Drawing.Point(16, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(207, 2);
+            this.label3.TabIndex = 54;
             // 
-            // handymanhome_jobdescriptionButton
+            // label2
             // 
-            this.handymanhome_jobdescriptionButton.Enabled = false;
-            this.handymanhome_jobdescriptionButton.Location = new System.Drawing.Point(10, 170);
-            this.handymanhome_jobdescriptionButton.Multiline = true;
-            this.handymanhome_jobdescriptionButton.Name = "handymanhome_jobdescriptionButton";
-            this.handymanhome_jobdescriptionButton.ReadOnly = true;
-            this.handymanhome_jobdescriptionButton.Size = new System.Drawing.Size(202, 114);
-            this.handymanhome_jobdescriptionButton.TabIndex = 9;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Location = new System.Drawing.Point(16, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(207, 2);
+            this.label2.TabIndex = 53;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label9.Location = new System.Drawing.Point(13, 290);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 17);
+            this.label9.TabIndex = 52;
+            this.label9.Text = "Date posted:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label8.Location = new System.Drawing.Point(13, 192);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 17);
+            this.label8.TabIndex = 51;
+            this.label8.Text = "Time frame";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label7.Location = new System.Drawing.Point(13, 100);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 17);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Base pay";
             // 
             // handymanhome_datepostedButton
             // 
-            this.handymanhome_datepostedButton.Enabled = false;
-            this.handymanhome_datepostedButton.Location = new System.Drawing.Point(87, 118);
+            this.handymanhome_datepostedButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.handymanhome_datepostedButton.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.handymanhome_datepostedButton.Font = new System.Drawing.Font("Product Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.handymanhome_datepostedButton.Location = new System.Drawing.Point(16, 310);
+            this.handymanhome_datepostedButton.Multiline = true;
             this.handymanhome_datepostedButton.Name = "handymanhome_datepostedButton";
             this.handymanhome_datepostedButton.ReadOnly = true;
-            this.handymanhome_datepostedButton.Size = new System.Drawing.Size(125, 20);
-            this.handymanhome_datepostedButton.TabIndex = 8;
+            this.handymanhome_datepostedButton.Size = new System.Drawing.Size(207, 25);
+            this.handymanhome_datepostedButton.TabIndex = 1;
             // 
             // handymanhome_timeframeButton
             // 
-            this.handymanhome_timeframeButton.Enabled = false;
-            this.handymanhome_timeframeButton.Location = new System.Drawing.Point(87, 85);
+            this.handymanhome_timeframeButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.handymanhome_timeframeButton.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.handymanhome_timeframeButton.Font = new System.Drawing.Font("Product Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.handymanhome_timeframeButton.Location = new System.Drawing.Point(16, 215);
+            this.handymanhome_timeframeButton.Multiline = true;
             this.handymanhome_timeframeButton.Name = "handymanhome_timeframeButton";
             this.handymanhome_timeframeButton.ReadOnly = true;
-            this.handymanhome_timeframeButton.Size = new System.Drawing.Size(125, 20);
-            this.handymanhome_timeframeButton.TabIndex = 7;
+            this.handymanhome_timeframeButton.Size = new System.Drawing.Size(207, 25);
+            this.handymanhome_timeframeButton.TabIndex = 1;
             // 
             // handymanhome_basepayButton
             // 
-            this.handymanhome_basepayButton.Enabled = false;
-            this.handymanhome_basepayButton.Location = new System.Drawing.Point(87, 50);
+            this.handymanhome_basepayButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.handymanhome_basepayButton.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.handymanhome_basepayButton.Font = new System.Drawing.Font("Product Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.handymanhome_basepayButton.Location = new System.Drawing.Point(16, 120);
+            this.handymanhome_basepayButton.Multiline = true;
             this.handymanhome_basepayButton.Name = "handymanhome_basepayButton";
             this.handymanhome_basepayButton.ReadOnly = true;
-            this.handymanhome_basepayButton.Size = new System.Drawing.Size(125, 20);
-            this.handymanhome_basepayButton.TabIndex = 6;
+            this.handymanhome_basepayButton.Size = new System.Drawing.Size(207, 25);
+            this.handymanhome_basepayButton.TabIndex = 1;
             // 
             // handymanhome_postedbyTextbox
             // 
-            this.handymanhome_postedbyTextbox.Enabled = false;
-            this.handymanhome_postedbyTextbox.Location = new System.Drawing.Point(87, 17);
+            this.handymanhome_postedbyTextbox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.handymanhome_postedbyTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.handymanhome_postedbyTextbox.Font = new System.Drawing.Font("Product Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.handymanhome_postedbyTextbox.Location = new System.Drawing.Point(16, 37);
+            this.handymanhome_postedbyTextbox.Multiline = true;
             this.handymanhome_postedbyTextbox.Name = "handymanhome_postedbyTextbox";
             this.handymanhome_postedbyTextbox.ReadOnly = true;
-            this.handymanhome_postedbyTextbox.Size = new System.Drawing.Size(125, 20);
-            this.handymanhome_postedbyTextbox.TabIndex = 5;
+            this.handymanhome_postedbyTextbox.Size = new System.Drawing.Size(207, 25);
+            this.handymanhome_postedbyTextbox.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 154);
+            this.label6.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label6.Location = new System.Drawing.Point(13, 17);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Job Description";
+            this.label6.Size = new System.Drawing.Size(66, 17);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Posted by:";
             // 
-            // label4
+            // panel9
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 121);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Date Posted";
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
+            this.panel9.Controls.Add(this.handymanhome_jobdescriptionButton);
+            this.panel9.Location = new System.Drawing.Point(16, 408);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(207, 114);
+            this.panel9.TabIndex = 6;
             // 
-            // label5
+            // handymanhome_jobdescriptionButton
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 88);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Time Frame";
+            this.handymanhome_jobdescriptionButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
+            this.handymanhome_jobdescriptionButton.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.handymanhome_jobdescriptionButton.Enabled = false;
+            this.handymanhome_jobdescriptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.handymanhome_jobdescriptionButton.Location = new System.Drawing.Point(2, 9);
+            this.handymanhome_jobdescriptionButton.Multiline = true;
+            this.handymanhome_jobdescriptionButton.Name = "handymanhome_jobdescriptionButton";
+            this.handymanhome_jobdescriptionButton.ReadOnly = true;
+            this.handymanhome_jobdescriptionButton.Size = new System.Drawing.Size(203, 95);
+            this.handymanhome_jobdescriptionButton.TabIndex = 9;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Base Pay";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label1.Location = new System.Drawing.Point(13, 388);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 17);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Job description";
             // 
-            // label2
+            // handymanhome_ApplyButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Posted By";
+            this.handymanhome_ApplyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
+            this.handymanhome_ApplyButton.FlatAppearance.BorderSize = 0;
+            this.handymanhome_ApplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.handymanhome_ApplyButton.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.handymanhome_ApplyButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.handymanhome_ApplyButton.Image = ((System.Drawing.Image)(resources.GetObject("handymanhome_ApplyButton.Image")));
+            this.handymanhome_ApplyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.handymanhome_ApplyButton.Location = new System.Drawing.Point(16, 555);
+            this.handymanhome_ApplyButton.Name = "handymanhome_ApplyButton";
+            this.handymanhome_ApplyButton.Size = new System.Drawing.Size(207, 47);
+            this.handymanhome_ApplyButton.TabIndex = 10;
+            this.handymanhome_ApplyButton.Text = "       Apply";
+            this.handymanhome_ApplyButton.UseVisualStyleBackColor = false;
+            this.handymanhome_ApplyButton.Click += new System.EventHandler(this.handymanhome_ApplyButton_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.alljobs_datagridview);
+            this.panel1.Location = new System.Drawing.Point(195, 66);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1159, 617);
+            this.panel1.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Location = new System.Drawing.Point(446, 11);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.panel3.Size = new System.Drawing.Size(498, 46);
+            this.panel3.TabIndex = 12;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Product Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(53, 15);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(432, 17);
+            this.textBox1.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(8, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Location = new System.Drawing.Point(444, 12);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(52, 45);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.handymanhome_myaccountbutton);
+            this.panel2.Location = new System.Drawing.Point(-2, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(189, 683);
+            this.panel2.TabIndex = 13;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label25);
+            this.panel7.Controls.Add(this.label24);
+            this.panel7.Controls.Add(this.pictureBox2);
+            this.panel7.Location = new System.Drawing.Point(0, 15);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(189, 75);
+            this.panel7.TabIndex = 60;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
+            this.label25.Location = new System.Drawing.Point(89, 35);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(69, 17);
+            this.label25.TabIndex = 58;
+            this.label25.Text = "Handyman";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Product Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label24.Location = new System.Drawing.Point(90, 20);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(54, 16);
+            this.label24.TabIndex = 57;
+            this.label24.Text = "Welcome";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(6, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(98, 58);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Product Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(1, 629);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(186, 36);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "         Change password";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1, 202);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(187, 45);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "                 Home";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // handymanhome_myaccountbutton
+            // 
+            this.handymanhome_myaccountbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.handymanhome_myaccountbutton.FlatAppearance.BorderSize = 0;
+            this.handymanhome_myaccountbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.handymanhome_myaccountbutton.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.handymanhome_myaccountbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
+            this.handymanhome_myaccountbutton.Image = ((System.Drawing.Image)(resources.GetObject("handymanhome_myaccountbutton.Image")));
+            this.handymanhome_myaccountbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.handymanhome_myaccountbutton.Location = new System.Drawing.Point(0, 249);
+            this.handymanhome_myaccountbutton.Name = "handymanhome_myaccountbutton";
+            this.handymanhome_myaccountbutton.Size = new System.Drawing.Size(187, 45);
+            this.handymanhome_myaccountbutton.TabIndex = 0;
+            this.handymanhome_myaccountbutton.Text = " My Account";
+            this.handymanhome_myaccountbutton.UseVisualStyleBackColor = false;
+            this.handymanhome_myaccountbutton.Click += new System.EventHandler(this.handymanhome_myaccountbutton_Click_1);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Product Sans", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(49)))), ((int)(((byte)(113)))));
+            this.label10.Location = new System.Drawing.Point(14, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 21);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Job listings";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Product Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label11.Location = new System.Drawing.Point(14, 30);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(203, 17);
+            this.label11.TabIndex = 57;
+            this.label11.Text = "Browse through the jobs available.";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Location = new System.Drawing.Point(195, 12);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(240, 57);
+            this.panel6.TabIndex = 59;
+            // 
+            // label12
+            // 
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.Location = new System.Drawing.Point(0, 55);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(240, 2);
+            this.label12.TabIndex = 57;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 238;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 221;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 218;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 218;
             // 
             // handyman_HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 511);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.alljobs_datagridview);
-            this.Controls.Add(this.handymanhome_myaccountbutton);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
+            this.ClientSize = new System.Drawing.Size(1352, 681);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "handyman_HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.handyman_HomeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.alljobs_datagridview)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button handymanhome_myaccountbutton;
         private System.Windows.Forms.DataGridView alljobs_datagridview;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button handymanhome_ApplyButton;
         private System.Windows.Forms.TextBox handymanhome_jobdescriptionButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox handymanhome_datepostedButton;
         private System.Windows.Forms.TextBox handymanhome_timeframeButton;
-        private System.Windows.Forms.TextBox handymanhome_basepayButton;
         private System.Windows.Forms.TextBox handymanhome_postedbyTextbox;
+        private System.Windows.Forms.TextBox handymanhome_basepayButton;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button handymanhome_myaccountbutton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button handymanhome_ApplyButton;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

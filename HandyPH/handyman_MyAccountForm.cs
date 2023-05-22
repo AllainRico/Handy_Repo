@@ -43,5 +43,17 @@ namespace HandyPH
                 handymanmyaccountform_aboutTextBox.Text = da.GetValue(8).ToString();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            handyman_HomeForm homeForm = new handyman_HomeForm();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void myaccountform_editmyaccountButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

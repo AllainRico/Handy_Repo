@@ -49,5 +49,13 @@ namespace HandyPH
             home.homeownerhome_username = usernameText.Text;
             home.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            userHome userHome = new userHome();
+            userHome.Show();
+            this.Hide();
+
+        }
     }
 }

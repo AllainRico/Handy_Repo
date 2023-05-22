@@ -18,8 +18,16 @@ namespace HandyPH
             InitializeComponent();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            loginForm login = new loginForm();
+            login.Show();
+            this.Hide();
+        }
+
         private void signupform_signupButton_Click(object sender, EventArgs e)
         {
+
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
             //change this shit kay ma error ni 

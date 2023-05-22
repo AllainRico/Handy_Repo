@@ -91,5 +91,12 @@ namespace HandyPH
             }
             
         }
+
+        private void handymanhome_myaccountbutton_Click_1(object sender, EventArgs e)
+        {
+            handyman_MyAccountForm myacc = new handyman_MyAccountForm();
+            myacc.Show();
+            this.Hide();
+        }
     }
 }

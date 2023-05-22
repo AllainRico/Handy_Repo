@@ -91,7 +91,7 @@ namespace HandyPH
             }
         }
 
-        private void loginform_signupbutton_Click(object sender, EventArgs e)
+        private void loginform_signupbutton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             signupForm signup = new signupForm();
             signup.Show();

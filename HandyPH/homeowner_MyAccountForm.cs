@@ -40,5 +40,80 @@ namespace HandyPH
                 homeownermyaccountform_streetTextBox.Text = da.GetValue(6).ToString();
             }
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            String username = homeownermyaccountform_usernameTextBox.Text;
+            homeowner_HomeForm homeowner_home = new homeowner_HomeForm();
+            //Borrow form2 = new Borrow();
+            //home.usernametext.Text = usernameTextBox.Text;
+
+            homeowner_home.homeownerhome_username = username;
+            homeowner_home.Show();
+            this.Hide();
+        }
+
+        private void myaccountform_editmyaccountButton_Click(object sender, EventArgs e)
+        {
+            //ToolTip toolTip = new ToolTip();
+            //toolTip.Show("editing enabled", editAccountbtn, 0, 0, 2000);
+            //MessageBox.Show("Editing Enabled! Please specify changes","Update Information");
+
+
+            homeownermyaccountform_contactnumberTextBox.Enabled = true;
+            homeownermyaccountform_contactnumberTextBox.ReadOnly = false;
+
+            homeownermyaccountform_municipalityTextBox.Enabled = true;
+            homeownermyaccountform_municipalityTextBox.ReadOnly = false;
+
+            homeownermyaccountform_cityTextBox.Enabled = true;
+            homeownermyaccountform_cityTextBox.ReadOnly = false;
+
+            homeownermyaccountform_barangayTextBox.Enabled = true;
+            homeownermyaccountform_barangayTextBox.ReadOnly = false;
+
+            homeownermyaccountform_streetTextBox.Enabled = true;
+            homeownermyaccountform_streetTextBox.ReadOnly = false;
+
+            editAccountbtn.Hide();
+        }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            loginForm logout = new loginForm();
+            logout.Show();
+            this.Hide();
+        }
+
+        private void submiteditbtn_Click(object sender, EventArgs e)
+        {
+            homeownermyaccountform_contactnumberTextBox.Enabled = false;
+            homeownermyaccountform_contactnumberTextBox.ReadOnly = true;
+
+            homeownermyaccountform_municipalityTextBox.Enabled = false;
+            homeownermyaccountform_municipalityTextBox.ReadOnly = true;
+
+            homeownermyaccountform_cityTextBox.Enabled = false;
+            homeownermyaccountform_cityTextBox.ReadOnly = true;
+
+            homeownermyaccountform_barangayTextBox.Enabled = false;
+            homeownermyaccountform_barangayTextBox.ReadOnly = true;
+
+            homeownermyaccountform_streetTextBox.Enabled = false;
+            homeownermyaccountform_streetTextBox.ReadOnly = true;
+
+            String contactnumber = homeownermyaccountform_contactnumberTextBox.Text;
+            String municipality = homeownermyaccountform_municipalityTextBox.Text;
+            String city = homeownermyaccountform_cityTextBox.Text;
+            String barangay = homeownermyaccountform_barangayTextBox.Text;
+            String street = homeownermyaccountform_streetTextBox.Text;
+
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-SKI34QJ\\SQLEXPRESS;Initial Catalog=handymandb;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("UPDATE [dbo].[tblHomeowners] set [contactnumber] = '"+contactnumber+"', [municipality] = '"+municipality+"' , [city] = '"+city+"', [barangay] = '"+barangay+"',[street] = '"+street+"' where username = '" + homeownermyaccountform_usernameTextBox.Text + "';", con);
+            cmd.ExecuteReader();
+            //MessageBox.Show("Record Change Done Successfully!", "Update Done");
+            editAccountbtn.Show();
+        }
     }
 }
