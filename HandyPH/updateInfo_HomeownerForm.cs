@@ -51,13 +51,15 @@ namespace HandyPH
 
             String username = usernameText.Text;
             MessageBox.Show("Welcome user");
-            handyman_HomeForm handyman_home = new handyman_HomeForm();
+            homeowner_HomeForm homeownerhome = new homeowner_HomeForm();
             //Borrow form2 = new Borrow();
             //home.usernametext.Text = usernameTextBox.Text;
 
-            handyman_home.handyhome_username = username;
-            handyman_home.Show();
+            homeownerhome.homeownerhome_username = username;
+            homeownerhome.Show();
             Visible = false;
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
