@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HandyPH
 {
@@ -45,7 +46,23 @@ namespace HandyPH
 
             //here is for loading the shitty dtgridview
 
-            SqlDataAdapter sqlData2 = new SqlDataAdapter("SELECT * FROM[dbo].[tblCreateJob] where homeowner_ID = " + textBox1.Text + "", con);
+            string query = @"SELECT
+                    c.[job_ID],
+                    c.[job_description],
+                    c.[basepay],
+                    c.[timeframe],
+                    c.[dateposted],
+                    a.[handyman_ID],
+                    a.[payasked],
+                    a.[applydate]
+                FROM
+                    [dbo].[tblCreateJob] c
+                LEFT JOIN
+                    [dbo].[tblApplyJob] a ON c.[job_ID] = a.[job_id]
+                WHERE
+                    c.[homeowner_ID] = '" + textBox1.Text + "'";
+
+            SqlDataAdapter sqlData2 = new SqlDataAdapter(query, con);
             DataTable dtbl2 = new DataTable();
             sqlData2.Fill(dtbl2);
 
@@ -98,6 +115,11 @@ namespace HandyPH
             loginForm logout = new loginForm();
             logout.Show();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

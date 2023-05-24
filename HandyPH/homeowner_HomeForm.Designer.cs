@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homeowner_HomeForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.logoutbtn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.homeownerhome_myaccountbutton = new System.Windows.Forms.Button();
+            this.logoutbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -85,23 +85,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(189, 683);
             this.panel2.TabIndex = 8;
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logoutbtn.FlatAppearance.BorderSize = 0;
-            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(105)))), ((int)(((byte)(137)))));
-            this.logoutbtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutbtn.Image")));
-            this.logoutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutbtn.Location = new System.Drawing.Point(1, 629);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Size = new System.Drawing.Size(186, 36);
-            this.logoutbtn.TabIndex = 60;
-            this.logoutbtn.Text = "         Log out";
-            this.logoutbtn.UseVisualStyleBackColor = false;
-            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // panel7
             // 
@@ -179,6 +162,23 @@
             this.homeownerhome_myaccountbutton.UseVisualStyleBackColor = false;
             this.homeownerhome_myaccountbutton.Click += new System.EventHandler(this.homeownerhome_myaccountbutton_Click);
             // 
+            // logoutbtn
+            // 
+            this.logoutbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.FlatAppearance.BorderSize = 0;
+            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(105)))), ((int)(((byte)(137)))));
+            this.logoutbtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutbtn.Image")));
+            this.logoutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutbtn.Location = new System.Drawing.Point(1, 629);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(186, 36);
+            this.logoutbtn.TabIndex = 60;
+            this.logoutbtn.Text = "         Log out";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
@@ -199,6 +199,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(888, 581);
             this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel4
             // 
