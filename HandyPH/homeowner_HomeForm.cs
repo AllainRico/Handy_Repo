@@ -119,7 +119,20 @@ namespace HandyPH
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            loadInformation loadhandyman = new loadInformation();
 
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                loadhandyman.handyid = row.Cells["handyman_ID"].Value.ToString();
+
+                
+            }
+
+
+
+            loadhandyman.Show();
         }
     }
 }
